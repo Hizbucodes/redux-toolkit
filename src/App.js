@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Counter from "./components/Counter";
+import IncrementButton from "./components/IncrementButton";
+import DecrementButton from "./components/DecrementButton";
+import ResetButton from "./components/ResetButton";
+import InputCount from "./components/InputCount";
+import Form from "./components/Form";
+import PostsList from "./components/PostsList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>REDUX</h1>
+      {/* <Counter />
+      <IncrementButton />
+      <DecrementButton />
+      <ResetButton />
+      <InputCount /> */}
+      <Form />
+      <PostsList />
     </div>
   );
 }
